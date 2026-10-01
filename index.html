@@ -3,38 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario DOM</title>
+    <title>Formulário DOM</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>cadastro</h1>
-    <form id="formcadastro">
+    <h1>Cadastro</h1>
+    <form id="formCadastro">
         <label for="nome">Nome</label>
         <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
 
-        <label for="email">E mail</label>
-        <input type="email" name="email" id="email" placeholder="Digite seu email">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
 
         <label for="idade">Idade</label>
         <input type="number" name="idade" id="idade" min="0" max="99">
 
         <label>Sexo</label>
-        <div class="grupo-radio"
-        <label><input type="radio" name="sexo" id="sexo" value="Feminino">Feminino</label>
-        <label><input type="radio" name="sexo" id="sexo" value="Masculino">Masculino</label>
-    </div>
-    <label>interessess</label>
-    <div class="grupo-box">
-        <label><input type="checkbox" name="interessess" id="esportes">Esportes</label>
-        <label><input type="checkbox" name="interessess" id="musicas">Musicas</label>
-        <label><input type="checkbox" name="interessess" id="jogos">Jogos</label>
-    </div>
+        <div class="grupo-radio">
+            <label><input type="radio" name="sexo" id="sexo" value="feminino">Feminino</label>
+            <label><input type="radio" name="sexo" id="sexo" value="masculino">Masculino</label>
+        </div>
 
-    <label for="mensagem">Mensagem (max. 100 caracteres)</label>
-    <textarea id="mensagem" maxlength="100"></textarea>
-    <div id="contador">0 / 100</div>
+        <label>Interesses</label>
+        <div class="grupo-box">
+            <label><input type="checkbox" name="interesses" id="esportes">Esportes</label>
+            <label><input type="checkbox" name="interesses" id="musicas">Musicas</label>
+            <label><input type="checkbox" name="interesses" id="jogos">Jogos</label>
+        </div>
 
-    <button type="submit">Enviar cadastro</button>
+        <label for="mensagem">Mensagem (max. 100 caracteres)</label>
+        <textarea id="mensagem" maxlength="100"></textarea>
+        <div id="contador">0 / 100</div>
+
+        <button type="submit">Enviar cadastro</button>
     </form>
 
     <div id="mensagem-envio"></div>

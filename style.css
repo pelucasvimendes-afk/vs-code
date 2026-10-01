@@ -5,10 +5,14 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     max-width: 500px;
     margin: 40px auto;
     padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
 }
 
 label {
@@ -16,12 +20,13 @@ label {
     margin-top: 14px;
     font-weight: bold;
 }
+
 input[type="text"], input[type="email"], input[type="number"], textarea {
     width: 100%;
     padding: 8px;
     margin-top: 4px;
     box-sizing: border-box;
-    border: 2px solid #999;
+    border: 2px solid #cccccc;
     border-radius: 5px;
 }
 
@@ -30,23 +35,23 @@ textarea {
     height: 60px;
 }
 
-.grupo-radio label, grupo-box label {
+.grupo-radio label, .grupo-box label {
     font-weight: normal;
     display: inline-block;
     margin-right: 12px;
 }
 
 .foco {
-    border-color: blueviolet;
-    background-color: rgb(58, 0, 97);
+    border-color: #4a90d9 !important;
+    background-color: #f0f7ff;
 }
 
 .erro {
-    border-color: darkred;
+    border-color: #d64545 !important;
 }
 
 #contador {
-    font-size: 12%;
+    font-size: 12px;
     color: #666;
 }
 
@@ -57,15 +62,15 @@ textarea {
     display: none;
 }
 
-#mensagem.sucesso {
-    background-color: #f9f9cf;
-    color: greenyellow;
+#mensagem-envio.sucesso {
+    background-color: #3cff00;
+    color: #256b25;
     display: block;
 }
 
-#mensagem.falha {
-    background-color: aliceblue;
-    color: red;
+#mensagem-envio.falha {
+    background-color: #cf0000;
+    color: #8a2222;
     display: block;
 }
 
@@ -73,9 +78,10 @@ button {
     margin-top: 16px;
     padding: 10px 18px;
     cursor: pointer;
+    border: none;
 }
 
 button:hover {
-    background-color: aquamarine;
-    color: azure;
+    background-color: #256b25;
+    color: white;
 }
